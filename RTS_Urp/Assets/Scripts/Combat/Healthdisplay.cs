@@ -20,6 +20,7 @@ public class Healthdisplay : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        print(gameObject.name);
         healthBarParent.SetActive(true);
     }
     private void OnMouseExit()

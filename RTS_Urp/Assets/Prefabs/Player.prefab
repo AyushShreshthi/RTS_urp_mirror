@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3731826188392830905}
   - component: {fileID: 3731826188392830904}
   - component: {fileID: 1828240717495697697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,8 +59,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3731826188392830887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be2759cd9a7ef6d49bcdbc595c359f1e, type: 3}
+  m_Script: {fileID: 11500000, guid: e2539f48e587db54598198b956e074ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  cameraTransform: {fileID: 0}
+  buildingBlockLayer:
+    serializedVersion: 2
+    m_Bits: 1281
+  buildings:
+  - {fileID: 4265947167519733508, guid: 7f32ed568fbc38a45b0c16a9c82fc6db, type: 3}
+  - {fileID: 4265947167519733508, guid: 66b258457b4f23e4cbb635532a45e387, type: 3}
+  buildingRangeLimit: 5
