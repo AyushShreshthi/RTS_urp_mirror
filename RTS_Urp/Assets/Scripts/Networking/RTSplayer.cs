@@ -134,7 +134,7 @@ public class RTSplayer : NetworkBehaviour
     {
         if (!isPartyOwner) { return; }
 
-        //((RTSnetworkmanager)NetworkManager.singleton).StartGame();
+        ((RTSnetworkmanager)NetworkManager.singleton).StartGame();
     }
 
     [Command]
@@ -215,7 +215,7 @@ public class RTSplayer : NetworkBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-       // ((RTSnetworkmanager)NetworkManager.singleton).Players.Add(this);
+        ((RTSnetworkmanager)NetworkManager.singleton).Players.Add(this);
     }
 
     public override void OnStopClient()
@@ -224,7 +224,7 @@ public class RTSplayer : NetworkBehaviour
 
         if (!isClientOnly) { return; }
 
-        //((RTSnetworkmanager)NetworkManager.singleton).Players.Remove(this);
+        ((RTSnetworkmanager)NetworkManager.singleton).Players.Remove(this);
 
         if (!hasAuthority) { return; }
 
