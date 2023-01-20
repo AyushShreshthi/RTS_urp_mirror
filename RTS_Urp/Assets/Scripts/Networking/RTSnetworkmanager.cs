@@ -95,7 +95,6 @@ public class RTSnetworkmanager : NetworkManager
 
     #region Client
 
-
     public override void OnClientConnect()
     {
         base.OnClientConnect();

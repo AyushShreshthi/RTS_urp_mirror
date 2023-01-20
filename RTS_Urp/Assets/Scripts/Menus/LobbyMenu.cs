@@ -41,7 +41,7 @@ public class LobbyMenu : MonoBehaviour
             playerNameTexts[i].text = "Waiting For Player ...";
         }
 
-        startGameButton.interactable = players.Count >= 2;
+        startGameButton.interactable = players.Count >= 1;
 
     }
 

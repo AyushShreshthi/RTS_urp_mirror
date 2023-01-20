@@ -20,7 +20,7 @@ public class Minimap : MonoBehaviour, IPointerDownHandler, IDragHandler
             return;
         }
 
-        if (NetworkClient.connection.identity == null) return;
+        if (NetworkClient.connection?.identity == null) return;
 
         playerCameraTransform = NetworkClient.connection.identity.GetComponent<RTSplayer>().GetCameraTransform();
     }

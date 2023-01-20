@@ -25,15 +25,13 @@ public class MainMenuScript : MonoBehaviour
         lobbyEntered = Callback<LobbyEnter_t>.Create(OnLobbyEntered);
     }
 
-    
-
     public void HostLobby()
     {
         landingPagePanel.SetActive(false);
 
         if (useSteam)
         {
-            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, 4);
+            SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypePublic, 4);
             return;
         }
 
