@@ -96,6 +96,7 @@ public class UnitSpawner : NetworkBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        print(gameObject.name);
         if (eventData.button != PointerEventData.InputButton.Left) return;
 
         if (!hasAuthority) return;

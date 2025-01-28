@@ -70,6 +70,7 @@ public class RTSplayer : NetworkBehaviour
                     Quaternion.identity,
                     buildingBlockLayer))
         {
+            print("false");
             return false;
         }
 
@@ -78,10 +79,11 @@ public class RTSplayer : NetworkBehaviour
             if ((point - building.transform.position).sqrMagnitude
                 <= buildingRangeLimit * buildingRangeLimit)
             {
+                print("true");
                 return true;
             }
         }
-
+        print("false");
         return false;
     }
 

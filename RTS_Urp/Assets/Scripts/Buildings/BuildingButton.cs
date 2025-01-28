@@ -55,12 +55,15 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Debug.Log(buildingPreviewInstance.name);
         if (buildingPreviewInstance == null) return;
+        Debug.Log(buildingPreviewInstance.name);
 
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         if(Physics.Raycast(ray,out RaycastHit hit, Mathf.Infinity, floorMask))
         {
+        Debug.Log(buildingPreviewInstance.name);
             player.CmdTryPlaceBuilding(building.GetId(), hit.point);
         }
 
